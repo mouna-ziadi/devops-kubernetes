@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: retail-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/mouna-ziadi/devops-kubernetes
+    targetRevision: main
+    path: helm/retail-backend
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: retail-app
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

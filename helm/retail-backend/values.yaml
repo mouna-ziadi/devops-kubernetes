@@ -1,0 +1,24 @@
+image:
+  repository: mounaziadi/retail-management-system
+  tag: stable
+  pullPolicy: Always
+
+namespace: retail-app
+
+replicaCount: 2
+
+service:
+  port: 8087
+
+hpa:
+  minReplicas: 2
+  maxReplicas: 5
+  cpuUtilization: 70
+
+resources:
+  requests:
+    memory: "512Mi"
+    cpu: "250m"
+  limits:
+    memory: "1Gi"
+    cpu: "500m"

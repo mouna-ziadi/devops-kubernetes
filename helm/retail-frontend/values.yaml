@@ -1,0 +1,24 @@
+image:
+  repository: mounaziadi/retail-management-system-frontend
+  tag: stable
+  pullPolicy: Always
+
+namespace: retail-app
+
+replicaCount: 2
+
+service:
+  port: 4000
+
+hpa:
+  minReplicas: 2
+  maxReplicas: 4
+  cpuUtilization: 70
+
+resources:
+  requests:
+    memory: "256Mi"
+    cpu: "125m"
+  limits:
+    memory: "512Mi"
+    cpu: "250m"

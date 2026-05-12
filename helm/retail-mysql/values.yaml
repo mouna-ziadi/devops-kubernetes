@@ -1,0 +1,18 @@
+image:
+  repository: mysql
+  tag: "8.0"
+  pullPolicy: IfNotPresent
+
+namespace: retail-app
+
+persistence:
+  size: 5Gi
+  storageClass: local-path   # K3s default
+
+resources:
+  requests:
+    memory: "512Mi"
+    cpu: "250m"
+  limits:
+    memory: "1Gi"
+    cpu: "500m"
