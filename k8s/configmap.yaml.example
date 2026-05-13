@@ -1,0 +1,15 @@
+# configmap.yaml.example
+# Adapter les valeurs à votre environnement
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: retail-backend-config
+  namespace: retail-app
+data:
+  SPRING_DATASOURCE_URL: "jdbc:mysql://retail-mysql:3306/dbsupermarket?createDatabaseIfNotExist=true&useUnicode=true&serverTimezone=UTC"
+  SPRING_DATASOURCE_USERNAME: "root"
+  SERVER_PORT: "8087"
+  JPA_DDL_AUTO: "update"
+  JPA_SHOW_SQL: "false"
+  JWT_EXPIRATION_MS: "86400000"
+  APP_CORS_ALLOWED_ORIGINS: "http://YOUR_IP,http://localhost"

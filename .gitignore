@@ -1,0 +1,18 @@
+# Secrets et configs sensibles
+k8s/secrets.yaml
+.env
+*.env
+kubeconfig
+kubeconfig.yaml
+k3s.yaml
+
+# Fichiers temporaires
+*.tmp
+*.bak
+*.swp
+.DS_Store
+
+# Helm — charts téléchargés
+helm/*/charts/
+helm/*/Chart.lock
+
