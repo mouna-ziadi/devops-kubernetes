@@ -1,5 +1,6 @@
 # Secrets et configs sensibles
 k8s/secrets.yaml
+k8s/configmap.yaml
 .env
 *.env
 kubeconfig
