@@ -395,9 +395,6 @@ argocd app sync retail-app --insecure
 ## 👩‍💻 Auteure
 
 **Mouna Ziadi** — Cloud & DevOps Engineer  
-🎓 Diplômée 2024 — ESPRIT, Tunisie  
-🏅 CKA + CKAD Certified (2026)  
-🌍 Disponible pour CDI / Alternance en France (juin 2026)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-mouna--ziadi-0A66C2?logo=linkedin)](https://linkedin.com/in/mouna-ziadi-735174241)
 [![GitHub](https://img.shields.io/badge/GitHub-mouna--ziadi-181717?logo=github)](https://github.com/mouna-ziadi)
